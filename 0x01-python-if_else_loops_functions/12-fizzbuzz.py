@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 def fizzbuzz():
     for i in range(101):
-        for j in range(i, i + 1)
+        for j in range(i, i + 1):
             if i % 3 == 0 or i % 5 == 0:
                 if i % 3 == 0:
                     print("Fizz", end="")
