@@ -9,6 +9,6 @@ def fizzbuzz():
                     print("Buzz", end="")
                 print(" ", end="")
                 break
-         else:
+        else:
             print(f"{i:d}", end=" ")
     print("")
