@@ -8,6 +8,6 @@ def fizzbuzz():
                 print("Buzz", end="")
             print(" ", end="")
             break
-        else:
-            print(f"{i:d}", end=" ")
+    else:
+        print(f"{i:d}", end=" ")
     print("")
