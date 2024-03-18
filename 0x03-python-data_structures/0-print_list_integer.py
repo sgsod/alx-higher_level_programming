@@ -11,4 +11,5 @@ def print_list_integer(my_list=[]):
         print("{:d}".format(elem))
 
 
-if __name__ = '__main__':
+if __name__ == '__main__':
+    print_list_integer(my_list=[])
