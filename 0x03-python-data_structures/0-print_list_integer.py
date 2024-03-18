@@ -8,4 +8,5 @@ print one element per line
 def print_list_integer(my_list=[]):
     # iterate through my_list
     for elem in my_list:
-        print("{}".format(elem))
+        str = "{:d}"
+        print(str.format(elem))  
