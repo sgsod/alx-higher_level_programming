@@ -8,6 +8,8 @@ print one element per line
 def print_reversed_list_integer(my_list=[]):
     list_len = len(my_list) - 1
     # iterate through my_list
+    if my_list == None:
+        return None
     while list_len >= 0:
         print("{:d}".format(my_list[list_len]))
         list_len -= 1
