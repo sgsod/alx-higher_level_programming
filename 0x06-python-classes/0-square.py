@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""Containing an empty class.
 
-Sqaure simply usesthe placeholder pass.
-"""
+"""Containing an empty class."""
+
 
 class Square:
     """Should calculate squares."""
-    def __init__(self):
-    """Initializes the instance."""
-        pass
+    pass
