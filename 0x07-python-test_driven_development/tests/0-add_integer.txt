@@ -1,0 +1,55 @@
+The ``0-add_integer`` module
+======================
+
+The use of 0-add_integer module, containing one function called ``add_integer()``.
+
+Using ``add_integer``
+---------------------
+
+This function adds 2 integers or floats and returns the sum. First import add_integer.
+    
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+    Now use it (standard usage):
+
+    >>> add_integer(20, 100)
+    120
+
+    Second argument is initialized to 98 so providing one argument also works:
+    >>> add_integer(2)
+    100
+
+
+    Negative numbers can be passed:
+    >>> add_integer(-5, -5)
+    -10
+    >>> add_integer(-10)
+    88
+
+
+    Floats can be passed (floats will first be casted to integers):
+    >>> add_integer(10.0, 0.9)
+    10
+    >>> add_integer(-8.0)
+    90
+    >>> add_integer(5.0, 5)
+    10
+
+Exceptions
+----------
+    TypeError will be encountered if type of argument:
+    >>> add_integer(20, [9])
+    Traceback (most recent call last):
+              ...
+    TypeError: b must be an integer
+
+    Overflow will be encountered if values are unreal:
+    >>> add_integer(float('inf'), float('-inf'))
+    Traceback (most recent call last):
+              ...
+    OverflowError: cannot convert float infinity to integer
+
+    >>> add_integer(0, float('nan'))
+    Traceback (most recent call last):
+              ...
+    ValueError: cannot convert float NaN to integer
