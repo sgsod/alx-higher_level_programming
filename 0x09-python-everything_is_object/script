@@ -1,8 +1,8 @@
 #!/bin/bash
 
-for ((i=1; i<=5; i++))
+for ((i=1; i<=2; i++))
 do
-    touch "104-line${i}.txt"
+    touch "103-line${i}.txt"
 done
 
 echo "Text files created successfully boss"
