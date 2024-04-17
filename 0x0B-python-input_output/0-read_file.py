@@ -2,7 +2,7 @@
 """contains function read_file"""
 
 
-def read_file(filenamme=""):
+def read_file(filename=""):
     """read and pint file"""
 
     with open(filename, encoding="utf-8") as s:
