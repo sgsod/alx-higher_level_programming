@@ -3,7 +3,7 @@ const { argv } = require('node:process');
 
 let num = parseInt(argv[2]);
 const numX = num;
-const charX = 'X'
+const charX = 'X';
 if (isNaN(num)) {
   console.log('Missing size');
 } else {
